@@ -10,7 +10,6 @@ export class LogController {
 
     @GrpcMethod('LogsService')
     createLog(data: CreateLogDto): Promise<Log> {
-        console.log(data)
         return this.logService.create(data);
     }
 }

@@ -6,14 +6,14 @@ export type RestaurantDocument = Log & Document;
 @Schema()
 export class Log {
  
-  @Prop({required: true})
-  userId: number;
+  // @Prop({required: true})
+  // userId: number;
 
   @Prop({required: true})
-  dateTime: number;
+  dateTime: string;
 
   @Prop()
-  description: string;
+  log: string;
 
 
 }

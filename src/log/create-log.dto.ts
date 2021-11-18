@@ -1,12 +1,12 @@
 import { IsNotEmpty } from "class-validator";
 
 export class CreateLogDto {
-    @IsNotEmpty()
-    userId: number;
+    // @IsNotEmpty()
+    // userId: number;
 
     @IsNotEmpty()
-    dateTime: number;
+    dateTime: string;
 
     @IsNotEmpty()
-    description: string;
+    log: string;
 }
